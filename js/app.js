@@ -5,7 +5,7 @@ myApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'home.html'
+        templateUrl: 'templates/home.html'
       }).
       otherwise({
         redirectTo: '/'
