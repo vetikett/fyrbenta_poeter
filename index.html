@@ -13,10 +13,12 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/interaction.js"></script>
 
     </head>
     <body>
@@ -26,17 +28,32 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title"><a href="#">Fyrbenta Poeter</a></h1>
+                <p class="home-nav-link title"><a href="#/">Fyrbenta Poeter</a></p>
                 <nav>
                     <ul>
-                        <li><a href="#om">Om oss</a></li>
-                        <li><a href="#">E-shop</a></li>
-                        <li><a href="#">Böcker</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="#">Press</a></li>
+                        <li><a class="books-nav-link" href="#books">Böcker</a></li>
+                        <li><a class="about-us-nav-link" href="#about-us">Om oss</a></li>
+                        <li><a class="contact-nav-link" href="#contact">Kontakt</a></li>
+                        <li><a class="press-nav-link" href="#press">Press</a></li>
+                        <li><a class="eshop-nav-link" href="#e-shop">E-shop</a></li>
                     </ul>
                 </nav>
+
+
             </header>
+
+
+            <nav class="about-us-menu sub-menu sub-menu-mobile-reseter">
+                <ul>
+                    <li><a class="foreword-menu-link" href="">Förord</a></li>
+                    <li><a class="idea-menu-link" href="">Affärsidé</a></li>
+                    <li><a class="vision-menu-link" href="">Vision</a></li>
+                    <li><a class="the-content-menu-link" href="">Innehåll</a></li>
+                    <li><a class="message-menu-link" href="">Budskap</a></li>
+                    <li><a class="the-twist-menu-link" href="">Kråksången</a></li>
+                </ul>
+            </nav>
+
         </div>
 
         <div class="main-container">

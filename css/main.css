@@ -62,49 +62,81 @@ textarea {
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Ubuntu|Marvel);
 
+@font-face {
+    font-family: 'dk_cool_crayonregular';
+    src: url('dk_cool_crayon-webfont.eot');
+    src: url('dk_cool_crayon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dk_cool_crayon-webfont.woff2') format('woff2'),
+         url('dk_cool_crayon-webfont.woff') format('woff'),
+         url('dk_cool_crayon-webfont.ttf') format('truetype'),
+         url('dk_cool_crayon-webfont.svg#dk_cool_crayonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     font: 16px/26px Ubuntu, sans-serif;
+    background-color: #FEF9E2;
+    color: #545454;
+    overflow-y: scroll;
 
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 96%;
+    margin: 0 2%;
 }
 
 /* ===================
-    ALL: Orange Theme
+     Theme
    =================== */
 
-.header-container {
-    border-bottom: 2px solid #12571C;
+.header-container,
+.sub-menu {
+    border-bottom: 2px solid #545454;
 }
 
 .footer-container,
 .main aside {
-    border-top: 2px solid #12571C;
+    border-top: 2px solid #545454;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #55A757;
+    background: url('../img/brick-wall-dark.png'), #8CF789;
 }
 
 .title {
+    font-family: 'dk_cool_crayonregular';
+    font-size: 2rem;
     text-align: center;
 }
 
 .title a {
-    font-family: 'Marvel', sans-serif;
+    font-family: 'dk_cool_crayonregular';
     color: white;
     text-decoration: none;
-
+    text-shadow: 1px 1px grey;
 }
 
 .title a:visited {
     color: white;
 }
+
+.title a:hover {
+    text-shadow: 5px 5px grey;
+}
+
+.logo {
+    font-family: 'dk_cool_crayonregular';
+    font-size: 2rem;
+    color: #7A7A7A;
+    text-align: center;
+}
+
+
 
 /* ==============
     MOBILE: Menu
@@ -119,11 +151,10 @@ nav a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
-
+    text-shadow: 1px 2px grey;
     text-align: center;
     text-decoration: none;
-    font-size: 1.25rem;
-
+    font-size: 1.3rem;
     color: white;
 }
 
@@ -135,6 +166,13 @@ nav a:visited {
 nav a:hover {
     text-decoration: underline;
 }
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    margin-left: -999px;
+}
+
 
 /* ==============
     MOBILE: Main
@@ -148,9 +186,51 @@ nav a:hover {
     font-size: 2em;
 }
 
+article {
+    margin-top: 1.4rem;
+}
+
 .main aside {
     color: white;
     padding: 0px 5% 10px;
+}
+
+.home-tag {
+        background-repeat: no-repeat;
+        height: 300px;
+        background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
+        background-size: 100%; 
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+.article-listing {
+    margin-bottom: 40px;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #B6B6B6;
+}
+
+.article-listing img {
+    width: 230px;
+}
+
+.books-tag {
+
+}
+
+.center-quote-text {
+    color: #7A7A7A;
+    text-align: center;
+}
+
+.buy-button {
+    display: block;
+    background-color: #5FB872;
+    padding: 4px 60px;
+    border: none;
+    margin: 10px 40px;
+
 }
 
 .footer-container footer {
@@ -188,13 +268,13 @@ nav a:hover {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 481px) {
 
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
     nav {
-        
+        width: 103%;
     }
 
     nav a {
@@ -213,6 +293,47 @@ nav a:hover {
         margin-right: 0;
     }
 
+    .sub-menu {
+        display: none;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        background-color: #545454;
+        margin: 0;
+        border-top: 1px solid #446C45;
+        border-bottom: none;
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+    .sub-menu ul {
+        margin: 0;
+    }
+
+    .sub-menu li {
+        display: inline-block;
+        margin: 0 1.7%;
+    }
+
+    .sub-menu a {
+        font-size: 1rem;
+        text-shadow: none;
+        padding: 6px 0 0 0;
+        width: 5%;
+    }
+
+    .sub-menu-fixed {
+        position: fixed;
+        margin-bottom: 40px;
+        top: 0;
+    }
+
+    .home-tag {
+        height: 700px;
+    }
+
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -226,7 +347,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
 /* ====================
     WIDE: CSS3 Effects
@@ -250,15 +371,39 @@ nav a:hover {
     nav {
         display: inline-block;
         float: right;
-        width: 64%;
-        margin-top: 8px;
+        width: 62%;
+        margin-top: 16px;
+
     }
+
+    nav ul {
+        margin-left: 5%;     
+    }
+
     nav a {
         float: left;
-        width: 16%;
-        margin: 0 0 0 2%;
-        padding: 15px 1%;
+        width: 18%;
+        margin: 0 0 0 1%;
+        padding: 15px 0%;
         margin-bottom: 0;
+    }
+
+    .sub-menu {
+        margin-top: 0;
+    }
+
+    .sub-menu li {
+        margin: 0 4%;
+    }
+
+    .home-tag {
+        background-repeat: no-repeat;
+        height: 700px;
+        background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
+        background-size: 100%; 
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
     }
 
 /* ============
@@ -286,6 +431,16 @@ nav a:hover {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+
+    .home-tag {
+        background-repeat: no-repeat;
+        height: 700px;
+        background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
+        background-size: 100%; 
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
     }
 }
 
