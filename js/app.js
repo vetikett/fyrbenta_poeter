@@ -10,17 +10,20 @@ myApp.config(['$routeProvider',
       when('/books', {
         templateUrl: 'templates/books.html'
       }).
+      when('/info', {
+      	templateUrl: 'templates/info.html'
+      }).
       when('/about-us', {
       	templateUrl: 'templates/about-us.html'
-      }).
-      when('/contact', {
-      	templateUrl: 'templates/contact.html'
       }).
       when('/press', {
         templateUrl: 'templates/press.html'
       }).
       when('/e-shop', {
         templateUrl: 'templates/e-shop.html'
+      }).
+      when('/contact', {
+        templateUrl: 'templates/contact.html'
       }).
       otherwise({
         redirectTo: '/'

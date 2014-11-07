@@ -105,7 +105,11 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: url('../img/brick-wall-dark.png'), #8CF789;
+    
+}
+
+.footer-container {
+    text-align: center;
 }
 
 .title {
@@ -116,17 +120,16 @@ body {
 
 .title a {
     font-family: 'dk_cool_crayonregular';
-    color: white;
+    color: #545454;
     text-decoration: none;
-    text-shadow: 1px 1px grey;
 }
 
 .title a:visited {
-    color: white;
+    color: #545454;
 }
 
 .title a:hover {
-    text-shadow: 5px 5px grey;
+    
 }
 
 .logo {
@@ -151,16 +154,15 @@ nav a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
-    text-shadow: 1px 2px grey;
     text-align: center;
     text-decoration: none;
     font-size: 1.3rem;
-    color: white;
+    color: #545454;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #545454;
 }
 
 nav a:hover {
@@ -200,15 +202,16 @@ article {
         height: 300px;
         background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
         background-size: 100%; 
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
     }
 
 .article-listing {
     margin-bottom: 40px;
     padding-bottom: 20px; 
     border-bottom: 1px solid #B6B6B6;
+}
+
+.article-listing:last-child {
+    border-bottom: none;
 }
 
 .article-listing img {
@@ -233,9 +236,47 @@ article {
 
 }
 
-.footer-container footer {
-    color: white;
+.footer-nav {
+    display: none;
+}
+
+.contact-section-footer {
     padding: 20px 0;
+}
+
+.social-media {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+}
+
+.social-media img {
+    width: 40px; 
+}
+
+.contact-link-footer {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #545454;
+    margin: 0 1%;
+    border-left: 1px solid #545454;
+    padding: 8px 3%;
+
+}
+
+.contact-link-footer a {
+    color: #545454;
+    text-decoration: none;
+}
+
+.contact-link-footer a:hover {
+    text-decoration: underline;
+}
+
+.fixed-footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 /* ===============
@@ -301,11 +342,9 @@ article {
         font-size: 1rem;
         background-color: #545454;
         margin: 0;
+        padding: 6px 0;
         border-top: 1px solid #446C45;
         border-bottom: none;
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
     }
 
     .sub-menu ul {
@@ -314,14 +353,20 @@ article {
 
     .sub-menu li {
         display: inline-block;
-        margin: 0 1.7%;
+        vertical-align: top;
+        margin: 0 1.5%;
     }
 
     .sub-menu a {
+        width: 100%;
+        color: white;
         font-size: 1rem;
         text-shadow: none;
-        padding: 6px 0 0 0;
-        width: 5%;
+        padding: 0;
+    }
+
+    .sub-menu a:visited {
+        color: white;
     }
 
     .sub-menu-fixed {
@@ -330,8 +375,51 @@ article {
         top: 0;
     }
 
+    .books-menu {
+        
+    }
+
+    .books-menu li {
+        border-right: 1px solid white;
+        margin: 0;
+        padding: 0 2% 0 0.7%;
+    }
+
+    .books-menu li:last-child {
+        border-right: none;
+    }
+
+    .min-height-tags {
+        min-height: 400px;
+    }
+
     .home-tag {
         height: 700px;
+    }
+
+    .contact-section-footer {
+        padding: 20px 0 4px 0;
+    }
+
+    .footer-nav {
+        width: 98%;
+        margin: 0 auto;
+        display: block;
+        color: #545454;
+    }
+
+    .footer-nav ul {
+        text-align: center;
+        padding: 0 20px;
+        height: 40px;
+
+    }
+
+    .footer-nav a{
+        margin: 0;
+        width: 18%;
+        font-size: 1.245rem;
+        margin-bottom: 34px;
     }
 
 /* ========================
@@ -355,9 +443,7 @@ article {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+     
     }
 
 /* ============
@@ -393,17 +479,17 @@ article {
     }
 
     .sub-menu li {
-        margin: 0 4%;
+        padding: 0 3% 0 2.2%;
     }
 
     .home-tag {
         background-repeat: no-repeat;
-        height: 700px;
         background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
         background-size: 100%; 
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        width: 100%;
+        height: 700px;
+        margin: 0;
+        padding: 0;
     }
 
 /* ============
@@ -420,6 +506,7 @@ article {
         width: 28%;
         margin-top: 20px;
     }
+
 }
 
 @media only screen and (min-width: 1140px) {
@@ -438,9 +525,6 @@ article {
         height: 700px;
         background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
         background-size: 100%; 
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
     }
 }
 
