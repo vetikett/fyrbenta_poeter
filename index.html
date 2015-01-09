@@ -28,7 +28,7 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <p class="home-nav-link title"><a href="#/">Fyrbenta Poeter</a></p>
+                <p class="home-nav-link"><a class="title active" href="#/">Fyrbenta Poeter</a></p>
                 <nav>
                     <ul>
                         <li><a class="books-nav-link any-page-link" href="#books">Böcker</a></li>
@@ -63,6 +63,13 @@
                 <ul>
                     <li><a class="book4-menu-link" href="">SUVERÄNA CIRKUSAPOR</a></li>
                     <li><a class="book5-menu-link" href="">LUSTIGA LIPSILLAR</a></li>
+                    <li><a class="all-books-menu-link" href=""><span>ALLA BÖCKERNA</span></a></li>
+                </ul>
+            </nav>
+
+            <nav class="profile-menu sub-menu sub-menu-mobile-reseter"> <!-- about-us sub-menu -->
+                <ul>
+                    <li><a class="characters-menu-link" href=""><span>ALLA KARAKTÄRERNA</span></a></li>
                 </ul>
             </nav>
 
@@ -72,7 +79,7 @@
             
             <div class="main wrapper clearfix">
           
-                <div ng-view ></div>
+                <div ng-view autoscroll="true"></div>
             </div> <!-- #main -->
          
         </div> <!-- #main-container -->
@@ -81,11 +88,11 @@
             <footer class="wrapper">
                 
                 <div class="contact-section-footer">
-                    <a href="https://www.facebook.com/pages/Fyrbenta-Poeter/1487131718216243" class="social-media">
+                    <a href="https://www.facebook.com/pages/Fyrbenta-Poeter/1487131718216243" class="social-media" target="_blank">
                         <img src="img/1415299632_46-facebook-128.png" alt="facebook logo"> 
                      </a> 
                      
-                     <a href="http://instagram.com/fyrbentapoeter" class="social-media">
+                     <a href="http://instagram.com/fyrbentapoeter" class="social-media" target="_blank">
                         <img src="img/1415299636_38-instagram-128.png" alt="instagram logo"> 
                      </a> 
 
@@ -94,7 +101,7 @@
                     </div>
                 </div>
                 
-                <nav class="footer-nav">
+                <!-- <nav class="footer-nav">
                     <ul>
                         <li><a class="books-nav-link any-page-link" href="#books">Böcker</a></li>
                         <li><a class="info-nav-link any-page-link" href="#info">Info</a></li>
@@ -102,7 +109,7 @@
                         <li><a class="press-nav-link any-page-link" href="#press">Press</a></li>
                         <li><a class="eshop-nav-link any-page-link" href="#e-shop">E-shop</a></li>
                     </ul>
-                </nav>
+                </nav> -->
 
             </footer>
         </div>

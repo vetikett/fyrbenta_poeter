@@ -49,6 +49,14 @@ textarea {
     resize: vertical;
 }
 
+a {
+    outline: none;
+}
+
+a:active, a:focus { 
+    outline-style: none; -moz-outline-style:none; 
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -63,25 +71,40 @@ textarea {
 @import url(http://fonts.googleapis.com/css?family=Ubuntu|Marvel);
 
 @font-face {
-    font-family: 'dk_cool_crayonregular';
-    src: url('dk_cool_crayon-webfont.eot');
-    src: url('dk_cool_crayon-webfont.eot?#iefix') format('embedded-opentype'),
-         url('dk_cool_crayon-webfont.woff2') format('woff2'),
-         url('dk_cool_crayon-webfont.woff') format('woff'),
-         url('dk_cool_crayon-webfont.ttf') format('truetype'),
-         url('dk_cool_crayon-webfont.svg#dk_cool_crayonregular') format('svg');
+    font-family: 'moon_flower';
+    src: url('fonts/moon_flower/moon_flower-webfont.eot');
+    src: url('fonts/moon_flower/moon_flower-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/moon_flower/moon_flower-webfont.woff2') format('woff2'),
+         url('fonts/moon_flower/moon_flower-webfont.woff') format('woff'),
+         url('fonts/moon_flower/moon_flower-webfont.ttf') format('truetype'),
+         url('fonts/moon_flower/moon_flower-webfont.svg#moon_flower') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'moon_flower_bold';
+    src: url('fonts/moon_flower_bold/moon_flower_bold-webfont.eot');
+    src: url('fonts/moon_flower_bold/moon_flower_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/moon_flower_bold/moon_flower_bold-webfont.woff2') format('woff2'),
+         url('fonts/moon_flower_bold/moon_flower_bold-webfont.woff') format('woff'),
+         url('fonts/moon_flower_bold/moon_flower_bold-webfont.ttf') format('truetype'),
+         url('fonts/moon_flower_bold/moon_flower_bold-webfont.svg#moon_flower_bold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 body {
-    font: 16px/26px Ubuntu, sans-serif;
-    background-color: #FEF9E2;
-    color: #545454;
+    font: 17px/26px "chalkboard", sans-serif;
+    background-color: #5FB872;
+    color: #686764;
     overflow-y: scroll;
 
 }
+
+
 
 .wrapper {
     width: 96%;
@@ -108,33 +131,47 @@ body {
     
 }
 
+.header-container {
+    background-color: #5FB872;
+    z-index: 2;
+}
+
+.main-container {
+    /*background-image: url("../img/tapet.jpg"); */
+    background-color: #FEF4D4;
+}
+
 .footer-container {
     text-align: center;
+    background-color: #5FB872;
 }
 
 .title {
-    font-family: 'dk_cool_crayonregular';
-    font-size: 2rem;
+    display: block;
+    font-family: 'moon_flower_bold';
+    font-size: 3rem;
     text-align: center;
-}
-
-.title a {
-    font-family: 'dk_cool_crayonregular';
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 215px;
+    font-family: 'moon_flower_bold';
     color: #545454;
     text-decoration: none;
+    text-shadow: 1px 1px #686764;
 }
 
-.title a:visited {
+.title:visited {
     color: #545454;
 }
 
-.title a:hover {
-    
+.title:hover {
+    color: #E1E1E1;
+    text-shadow: 1px 1px #686764;
 }
 
 .logo {
-    font-family: 'dk_cool_crayonregular';
-    font-size: 2rem;
+    font-family: 'moon_flower_bold';
+    font-size: 3rem;
     color: #7A7A7A;
     text-align: center;
 }
@@ -151,29 +188,39 @@ nav ul {
 }
 
 nav a {
+    font-family: 'moon_flower_bold';
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
     text-align: center;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: #545454;
 }
 
-nav a:hover,
 nav a:visited {
     color: #545454;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #E1E1E1;
 }
 
 .sub-menu {
+    font-family: helvetica;
     display: none;
     position: absolute;
     margin-left: -999px;
 }
+
+.active {
+    border-bottom: 2px solid #E1E1E1;
+    color: #E1E1E1;
+    text-shadow: none;
+}
+.active:visited {
+    color: #E1E1E1;
+} 
 
 
 /* ==============
@@ -182,6 +229,8 @@ nav a:hover {
 
 .main {
     padding: 30px 0;
+    /*background-color: #E1AA97;*/
+    background-color: #FEF4D4;
 }
 
 .main article h1 {
@@ -198,16 +247,39 @@ article {
 }
 
 .home-tag {
-        background-repeat: no-repeat;
-        height: 300px;
-        background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
-        background-size: 100%; 
-    }
+    text-align: center;
+ }
+
+.foreword {
+
+}
+
+.home-content {
+    margin-top: -50px; 
+}
+
+.home-title {
+    font-family: 'moon_flower_bold';
+    font-size: 70px;
+    margin: 80px 0 0 0;
+    color: #fff;
+    text-shadow: 4px 4px grey;
+}
+
+.img-container {
+    margin: -120px 0 -40px 0;
+    position: relative;
+}
+
+.home-tag img {
+    width: 100%;
+}
 
 .article-listing {
     margin-bottom: 40px;
     padding-bottom: 20px; 
     border-bottom: 1px solid #B6B6B6;
+    text-align: center;
 }
 
 .article-listing:last-child {
@@ -218,8 +290,15 @@ article {
     width: 230px;
 }
 
-.books-tag {
+.book-section, .profile-section {
+    display: block;
+    vertical-align: top;
+    width: 280px;
+    margin: 0 auto;
+}
 
+.book-text {
+    text-align: center;
 }
 
 .center-quote-text {
@@ -232,8 +311,105 @@ article {
     background-color: #5FB872;
     padding: 4px 60px;
     border: none;
-    margin: 10px 40px;
+    margin: 10px 67px;
 
+}
+
+.navigation-overlay {
+    display: none;
+    text-align: center;
+    background-color: rgba(80, 80, 80, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    -webkit-animation: fade-in 0.3s; /* Safari 4+ */
+    -moz-animation:    fade-in 0.3s; /* Fx 5+ */
+    -o-animation:      fade-in 0.3s; /* Opera 12+ */
+    animation:         fade-in 0.3s; /* IE 10+, Fx 29+ */
+
+}
+
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.navigation-overlay-content {
+    position: relative;
+    background: url(../img/tapet.jpg);
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    margin: 40px auto;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+    border: 3px solid #494949;
+    box-shadow: 4px 4px 2px #404040; 
+}
+
+.overlay-navigation-pics {
+    display: inline-block;
+    width: 27%;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.overlay-navigation-pics:hover {
+    cursor: pointer;
+}
+
+.overlay-navigation-pics img {
+    width: 90%;
+}
+
+#kossan-kristin {
+    width: 200px;
+    height: 250px;
+}
+
+#kossan-kristin:hover {
+    cursor: pointer;
+}
+
+.navigation-overlay img {
+    width: 80%;
+}
+
+.press-characters {
+    margin: 0 0 -55px 0;
+    text-align: right;
+}
+
+.press-characters img {
+    width: 400px;
+}
+
+.info-page section{
+    text-align: left;
+}
+
+.info-page h2 {
+    text-align: center;
+}
+
+.about-us-tag p {
+    text-align: left;
 }
 
 .footer-nav {
@@ -265,7 +441,7 @@ article {
 }
 
 .contact-link-footer a {
-    color: #545454;
+    color: black;
     text-decoration: none;
 }
 
@@ -314,6 +490,11 @@ article {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+   .header-container {
+    position: fixed;
+    width: 100%;
+   }
+
     nav {
         width: 103%;
     }
@@ -323,7 +504,7 @@ article {
         width: 16%;
         margin: 0 1%;
         padding: 15px 1%;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     nav li:first-child a {
@@ -336,13 +517,12 @@ article {
 
     .sub-menu {
         display: none;
-        position: relative;
+        position: fixed;
         text-align: center;
         width: 100%;
-        font-size: 1rem;
-        background-color: #545454;
+        background-color: rgba(89, 89, 89, 0.9);
         margin: 0;
-        padding: 6px 0;
+        padding: 8px 0 0 0;
         border-top: 1px solid #446C45;
         border-bottom: none;
     }
@@ -360,9 +540,11 @@ article {
     .sub-menu a {
         width: 100%;
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        font-family: "chalkboard";
         text-shadow: none;
-        padding: 0;
+        padding: 0 0 2px 0;
+        margin-bottom: 0;
     }
 
     .sub-menu a:visited {
@@ -372,11 +554,19 @@ article {
     .sub-menu-fixed {
         position: fixed;
         margin-bottom: 40px;
-        top: 0;
+        background-color: rgba(89, 89, 89, 0.9);
     }
 
-    .books-menu {
-        
+    .main {
+        padding: 180px 0 0 0;
+    }
+
+    .books-tag {
+        margin-top: 10px;
+    }
+
+    .sub-menu span {
+        color: #FCAA36;
     }
 
     .books-menu li {
@@ -390,15 +580,45 @@ article {
     }
 
     .min-height-tags {
-        min-height: 400px;
+        min-height: 617px;
     }
 
     .home-tag {
-        height: 700px;
+        padding-bottom: 180px
     }
 
-    .contact-section-footer {
-        padding: 20px 0 4px 0;
+    .home-title {
+        font-size: 104px;
+    }
+
+    .img-container {
+        margin: -160px 0 -150px 0;
+    }
+
+    .book-section, .profile-section {
+        display: inline-block;
+        vertical-align: top;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+  
+
+    .press-characters {
+        margin: 0 0 -193px 0;
+    }
+
+    .press-characters img {
+        width: 480px;
+    }
+
+    .overlay-navigation-pics {
+        width: 26%;
+    }
+
+    .overlay-books {
+        margin: 30px 0;
+        width: 32%;
     }
 
     .footer-nav {
@@ -446,19 +666,24 @@ article {
      
     }
 
+    .main {
+        padding: 130px 0 0 0;
+    }
+
 /* ============
     WIDE: Menu
    ============ */
 
     .title {
         float: left;
+        padding-bottom: 18px;
     }
 
     nav {
         display: inline-block;
         float: right;
         width: 62%;
-        margin-top: 16px;
+        margin-top: 6px;
 
     }
 
@@ -475,32 +700,72 @@ article {
     }
 
     .sub-menu {
-        margin-top: 0;
+        padding: 6px 0;
+    }
+
+    .sub-menu a {
+        font-size: 1rem;
     }
 
     .sub-menu li {
         padding: 0 3% 0 2.2%;
     }
 
-    .home-tag {
-        background-repeat: no-repeat;
-        background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
-        background-size: 100%; 
-        width: 100%;
-        height: 700px;
-        margin: 0;
-        padding: 0;
+    .home-title {
+        font-size: 140px;
+    }
+
+    .img-container {
+        margin: -220px 0 -90px 0;
+    }
+
+    .img-container img {
+        max-width: 700px;
+    }
+
+    .book-section, .profile-section {
+        display: inline-block;
+        vertical-align: top;
+        width: 280px;
+        margin: 0 30px;
+    }
+
+    .press-characters {
+        margin: 0 0 -49px 0; 
+    }
+   
+    .press-characters img {
+        width: 800px;
+    }
+
+    .overlay-navigation-pics {
+        width: 26%;
+    }
+
+    .overlay-navigation-pics img {
+        width: 50%;
+    }
+
+     .overlay-books {
+        margin: 30px 0;
+        width: 32%;
     }
 
 /* ============
     WIDE: Main
    ============ */
+   /* .header-container {
+        background-image: url('../img/bok_liggande.png');
+        background-size: cover;
+        background-position: 0 -190px;
+        background-repeat: no-repeat;
+    }*/
 
     .main article {
         float: left;
-        width: 57%;
+        width: 100%;
     }
-
+    
     .main aside {
         float: right;
         width: 28%;
@@ -521,10 +786,7 @@ article {
     }
 
     .home-tag {
-        background-repeat: no-repeat;
-        height: 700px;
-        background-image: url('http://projectnursery.com/wp-content/uploads/2014/05/Chase-Room-Sketch-3-1024x662.png');
-        background-size: 100%; 
+     padding-bottom: 120px;
     }
 }
 
