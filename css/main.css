@@ -743,6 +743,10 @@ article {
         margin: 0 30px;
     }
 
+    .book-section p {
+        text-align: left;
+    }
+
     .press-characters {
         margin: 0 0 -49px 0; 
     }
