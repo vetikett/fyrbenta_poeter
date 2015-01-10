@@ -69,6 +69,7 @@ a:active, a:focus {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Ubuntu|Marvel);
+@import url(http://fonts.googleapis.com/css?family=Delius);
 
 @font-face {
     font-family: 'moon_flower';
@@ -97,7 +98,7 @@ a:active, a:focus {
 }
 
 body {
-    font: 17px/26px "chalkboard", sans-serif;
+    font: 17px/26px sans-serif;
     background-color: #5FB872;
     color: #686764;
     overflow-y: scroll;
@@ -207,7 +208,6 @@ nav a:hover {
 }
 
 .sub-menu {
-    font-family: helvetica;
     display: none;
     position: absolute;
     margin-left: -999px;
@@ -309,9 +309,10 @@ article {
 .buy-button {
     display: block;
     background-color: #5FB872;
-    padding: 4px 60px;
+    padding: 6px 60px;
     border: none;
     margin: 10px 67px;
+    box-shadow: 1px 2px 0px #3D7C44;
 
 }
 
@@ -485,7 +486,7 @@ article {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 481px) and (orientation:portrait) {
 
 /* ====================
     INTERMEDIATE: Menu
@@ -540,8 +541,9 @@ article {
     .sub-menu a {
         width: 100%;
         color: white;
-        font-size: 0.9rem;
-        font-family: "chalkboard";
+        font-size: 1.1rem;
+        letter-spacing: 0.8px;
+        font-family: 'Patrick Hand', helvetica;
         text-shadow: none;
         padding: 0 0 2px 0;
         margin-bottom: 0;
@@ -602,6 +604,10 @@ article {
         margin: 0 auto;
     }
 
+    .book-section p {
+        text-align: left;
+    }
+
   
 
     .press-characters {
@@ -619,6 +625,10 @@ article {
     .overlay-books {
         margin: 30px 0;
         width: 32%;
+    }
+
+    .overlay-books img {
+        box-shadow: 4px 4px 2px grey;
     }
 
     .footer-nav {
@@ -701,10 +711,6 @@ article {
 
     .sub-menu {
         padding: 6px 0;
-    }
-
-    .sub-menu a {
-        font-size: 1rem;
     }
 
     .sub-menu li {
