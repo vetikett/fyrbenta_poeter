@@ -57,6 +57,10 @@ a:active, a:focus {
     outline-style: none; -moz-outline-style:none; 
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -304,17 +308,50 @@ article {
 .center-quote-text {
     color: #7A7A7A;
     text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.center-quote-text img {
+    float: right;
+    margin-top: -40px;
 }
 
 .buy-button {
+    font-size: 1.25rem;
+    color: white;
     display: block;
     background-color: #5FB872;
     padding: 6px 60px;
     border: none;
-    margin: 10px 67px;
+    margin: 10px 60px;
     box-shadow: 1px 2px 0px #3D7C44;
 
 }
+
+.e-shop {
+    text-align: center;
+}
+
+.e-shop a {
+    display: inline-block;
+    color: white;
+    background-color: #5FB872;
+    padding: 10px 60px;
+    border: none;
+    margin: 10px 60px;
+    box-shadow: 1px 2px 0px #3D7C44;
+    text-decoration: none;
+}
+
+.e-shop div {
+    display: inline-block;
+    width: 320px;
+}
+
+.e-shop img {
+    width: 320px;
+} 
 
 .navigation-overlay {
     display: none;
@@ -368,7 +405,8 @@ article {
     display: inline-block;
     width: 27%;
     padding: 0px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+
 }
 
 .overlay-navigation-pics:hover {
@@ -583,10 +621,11 @@ article {
     }
 
     .min-height-tags {
-        min-height: 617px;
+        min-height: 400px;
     }
 
     .home-tag {
+        min-height: 400px;
         padding-bottom: 180px
     }
 
@@ -612,7 +651,7 @@ article {
   
 
     .press-characters {
-        margin: 0 0 -193px 0;
+        margin: 0 0 -30px 0;
     }
 
     .press-characters img {
@@ -629,7 +668,7 @@ article {
     }
 
     .overlay-books img {
-        box-shadow: 4px 4px 2px grey;
+        width: 110%;
     }
 
     .footer-nav {
@@ -757,15 +796,20 @@ article {
 
     .overlay-navigation-pics {
         width: 26%;
+        margin: 40px -4% 0;
     }
 
     .overlay-navigation-pics img {
-        width: 50%;
+        width: 140px;
     }
 
      .overlay-books {
         margin: 30px 0;
         width: 32%;
+    }
+
+    .overlay-books img {
+        width: 110%;
     }
 
 /* ============
