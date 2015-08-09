@@ -364,9 +364,13 @@ article {
 .book-category-links div {
     display: inline-block;
     margin: 20px;
-    width: 300px;
+    width: 260px;
     border: 2px solid #FFF4D3;
     
+}
+
+.book-category-links div img {
+    width: 260px;
 }
 
 .book-category-links div:hover {
@@ -455,12 +459,12 @@ article {
 }
 
 .press-characters {
-    margin: 0 0 -60px 0;
+    margin: 0 0 -54px 0;
     text-align: right;
 }
 
 .press-characters img {
-    width: 400px;
+    width: 320px;
 }
 
 .info-page section{
@@ -663,6 +667,14 @@ article {
 
     .img-container {
         margin: -160px 0 -150px 0;
+    }
+
+    .book-category-links div {
+        width: 320px;
+    }
+
+    .book-category-links div img {
+        width: 320px;
     }
 
     .book-section, .profile-section {
