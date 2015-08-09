@@ -19,6 +19,7 @@
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/jquery.mobile.custom.min.js"></script>
         <script src="js/app.js"></script>
         <script src="js/interaction.js"></script>
 
@@ -30,7 +31,7 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <p class="home-nav-link"><a class="title active" href="#/">Fyrbenta Poeter</a></p>
+                <p><a class="home-nav-link title active" href="#/">Fyrbenta Poeter</a></p>
                 <nav>
                     <ul>
                         <li><a class="books-nav-link any-page-link" href="#books">Böcker</a></li>
@@ -48,30 +49,39 @@
             <nav class="info-menu sub-menu sub-menu-mobile-reseter"> <!-- info sub-menu -->
                 <ul>
                     <li><a class="foreword-menu-link" href="">Förord</a></li>
-                    <li><a class="idea-menu-link" href="">Affärsidé</a></li>
-                    <li><a class="vision-menu-link" href="">Vision</a></li>
-                    <li><a class="the-content-menu-link" href="">Innehåll</a></li>
+                    <li><a class="idea-menu-link" href="">Idé</a></li>
+                    <li><a class="the-content-menu-link" href="">Tillvägagångssätt</a></li>
                     <li><a class="message-menu-link" href="">Budskap</a></li>
                     <li><a class="the-twist-menu-link" href="">Kråksången</a></li>
                 </ul>
             </nav>
 
-            <nav class="books-menu sub-menu sub-menu-mobile-reseter"> <!-- books sub-menu -->
+            <nav class="storybooks-menu books-menu sub-menu sub-menu-mobile-reseter"> <!-- books sub-menu -->
                 <ul>
                     <li><a class="book1-menu-link" href="">MASK I RADER</a></li>
-                    <li><a class="book2-menu-link" href="">ROLIGA RÖDA HUNDAR</a></li>
-                    <li><a class="book3-menu-link" href="">PANTADE PLUGGHÄSTAR</a></li>
+                    <li><a class="book2-menu-link" href="">RÖDA HUNDAR</a></li>
+                    <li><a class="book3-menu-link" href="">PLUGGHÄSTAR</a></li>
                 </ul>
                 <ul>
-                    <li><a class="book4-menu-link" href="">SUVERÄNA CIRKUSAPOR</a></li>
-                    <li><a class="book5-menu-link" href="">LUSTIGA LIPSILLAR</a></li>
-                    <li><a class="all-books-menu-link" href=""><span>ALLA BÖCKERNA</span></a></li>
+                    <li><a class="book4-menu-link" href="">CIRKUSAPOR</a></li>
+                    <li><a class="book5-menu-link" href="">LIPSILLAR</a></li>
+                    <li><a class="book6-menu-link" href="">SMÅRIM & ANNAT STIM</a></li>
+                    <li><a class="all-books-menu-link" href=""><span>VISA ALLA</span></a></li>
+                </ul>
+            </nav>
+
+            <nav class="textbooks-menu books-menu sub-menu sub-menu-mobile-reseter"> <!-- books sub-menu -->
+                <ul>
+                    <li><a class="book1-menu-link" href="">RIKTIGA LÅTSASDJUR</a></li>
+                    <li><a class="book2-menu-link" href="">RIKTIGA DJUR</a></li>
+                    <li><a class="book3-menu-link" href="">ALFABETTET</a></li>
+                    <li><a class="all-books-menu-link" href=""><span>VISA ALLA</span></a></li>
                 </ul>
             </nav>
 
             <nav class="profile-menu sub-menu sub-menu-mobile-reseter"> <!-- about-us sub-menu -->
                 <ul>
-                    <li><a class="characters-menu-link" href=""><span>ALLA KARAKTÄRERNA</span></a></li>
+                    <li><a class="characters-menu-link" href=""><span>SE ALLA KARAKTÄRERNA</span></a></li>
                 </ul>
             </nav>
 
@@ -90,7 +100,7 @@
             <footer class="wrapper">
                 
                 <div class="contact-section-footer">
-                    <a href="https://www.facebook.com/pages/Fyrbenta-Poeter/1487131718216243" class="social-media" target="_blank">
+                    <a href="https://www.facebook.com/groups/717036551715179/" class="social-media" target="_blank">
                         <img src="img/1415299632_46-facebook-128.png" alt="facebook logo"> 
                      </a> 
                      

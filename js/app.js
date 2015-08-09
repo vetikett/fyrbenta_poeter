@@ -8,7 +8,13 @@ myApp.config(['$routeProvider',
         templateUrl: 'templates/home.html'
       }).
       when('/books', {
-        templateUrl: 'templates/books.html'
+        templateUrl: 'templates/book-category.html'
+      }).
+      when('/storybooks', {
+        templateUrl: 'templates/storybooks.html'
+      }).
+      when('/textbooks', {
+        templateUrl: 'templates/textbooks.html'
       }).
       when('/info', {
       	templateUrl: 'templates/info.html'

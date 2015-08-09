@@ -102,13 +102,17 @@ a:visited {
 }
 
 body {
-    font: 17px/26px sans-serif;
+    font: 17px/26px "Helvetica Neue";
     background-color: #5FB872;
     color: #686764;
     overflow-y: scroll;
+    font-weight: 200;
 
 }
 
+h2 {
+    font-weight: 100;
+}
 
 
 .wrapper {
@@ -160,28 +164,19 @@ body {
     padding: 10px 0;
     width: 215px;
     font-family: 'moon_flower_bold';
-    color: #545454;
+    color: #E1E1E1;
     text-decoration: none;
     text-shadow: 1px 1px #686764;
+    border-bottom: 2px solid #60B76E;
 }
 
-.title:visited {
-    color: #545454;
+.title:link {
+    text-shadow: 1px 1px #686764;
 }
 
 .title:hover {
-    color: #E1E1E1;
-    text-shadow: 1px 1px #686764;
+    border-bottom: 2px solid #E1E1E1;
 }
-
-.logo {
-    font-family: 'moon_flower_bold';
-    font-size: 3rem;
-    color: #7A7A7A;
-    text-align: center;
-}
-
-
 
 /* ==============
     MOBILE: Menu
@@ -193,13 +188,12 @@ nav ul {
 }
 
 nav a {
-    font-family: 'moon_flower_bold';
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
     text-align: center;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #545454;
 }
 
@@ -254,8 +248,8 @@ article {
     text-align: center;
  }
 
-.foreword {
-
+.home-text {
+    margin-top: 24px;
 }
 
 .home-content {
@@ -301,9 +295,14 @@ article {
     margin: 0 auto;
 }
 
+.book-section img {
+    border: 1px solid #7A7A7A;
+}
+
 .book-text {
     text-align: center;
 }
+
 
 .center-quote-text {
     color: #7A7A7A;
@@ -353,6 +352,31 @@ article {
     width: 320px;
 } 
 
+.book-category-links {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.book-category-links a {
+    text-decoration: none;
+}
+
+.book-category-links div {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    border: 2px solid #FFF4D3;
+    
+}
+
+.book-category-links div:hover {
+    border: 2px solid grey;
+}
+
+.book-category-links img {
+    width: 300px;
+} 
+
 .navigation-overlay {
     display: none;
     text-align: center;
@@ -388,8 +412,8 @@ article {
 }
 
 .navigation-overlay-content {
+    background-image: url('../img/tapet.jpg'); 
     position: relative;
-    background: url(../img/tapet.jpg);
     width: 80%;
     max-width: 1000px;
     height: 80%;
@@ -431,7 +455,7 @@ article {
 }
 
 .press-characters {
-    margin: 0 0 -55px 0;
+    margin: 0 0 -60px 0;
     text-align: right;
 }
 
@@ -580,9 +604,9 @@ article {
     .sub-menu a {
         width: 100%;
         color: white;
-        font-size: 1.1rem;
+        font-size: 1.0rem;
         letter-spacing: 0.8px;
-        font-family: 'Patrick Hand', helvetica;
+        font-family: sans-serif;
         text-shadow: none;
         padding: 0 0 2px 0;
         margin-bottom: 0;
@@ -629,6 +653,10 @@ article {
         padding-bottom: 180px
     }
 
+    .home-text {
+        margin-top: 84px;
+    }
+
     .home-title {
         font-size: 104px;
     }
@@ -645,13 +673,13 @@ article {
     }
 
     .book-section p {
-        text-align: left;
+        text-align: center;
     }
 
   
 
     .press-characters {
-        margin: 0 0 -30px 0;
+        margin: 0 0 -36px 0;
     }
 
     .press-characters img {
@@ -667,9 +695,12 @@ article {
         width: 32%;
     }
 
+    
     .overlay-books img {
-        width: 110%;
+        width: 84%;
+        border: 1px solid grey;
     }
+    
 
     .footer-nav {
         width: 98%;
@@ -767,6 +798,10 @@ article {
         font-size: 140px;
     }
 
+    .home-text {
+        margin-top: 0px;
+    }
+
     .img-container {
         margin: -220px 0 -90px 0;
     }
@@ -783,11 +818,11 @@ article {
     }
 
     .book-section p {
-        text-align: left;
+        text-align: center;
     }
 
     .press-characters {
-        margin: 0 0 -49px 0; 
+        margin: 0 0 -59px 0; 
     }
    
     .press-characters img {
@@ -809,7 +844,7 @@ article {
     }
 
     .overlay-books img {
-        width: 110%;
+        width: 50%;
     }
 
 /* ============
@@ -847,8 +882,10 @@ article {
     }
 
     .home-tag {
-     padding-bottom: 120px;
+        padding-bottom: 120px;
     }
+
+    
 }
 
 /* ==========================================================================
