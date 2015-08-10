@@ -4,7 +4,7 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.controller('AnalyticsController', ['$scope', function ($scope) {
 
   $scope.$on('$viewContentLoaded', function(event) {
-    var location = "/" + (window.location.hash);
+    var location = window.location.hash.split('#')[1];
     window.ga('send', 'pageview', { page: location });
   });
 }]);
