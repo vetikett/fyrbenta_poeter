@@ -230,7 +230,7 @@ $(document).ready(function() {
 		$('.navigation-overlay').show();
 	});
 
-	$('body').on('click', '.books-tag .overlay-navigation-pics', function() {
+	$('body').on('click tap', '.books-tag .overlay-navigation-pics', function() {
 		var bookNumber = this.id.charAt(this.id.length - 1);
 		$('.navigation-overlay').hide();
 		
@@ -246,7 +246,7 @@ $(document).ready(function() {
 		
 	});
 
-	$('body').on('click', '.about-us-tag .overlay-navigation-pics', function() {
+	$('body').on('click tap', '.about-us-tag .overlay-navigation-pics', function() {
 		var profileNumber = this.id.charAt(this.id.length - 1);
 
 		$('.navigation-overlay').hide();
