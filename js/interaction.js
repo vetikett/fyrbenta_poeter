@@ -228,13 +228,21 @@ $(document).ready(function() {
 	/* == Book overlay navigation == */
 	$('.all-books-menu-link').click(function() {
 		$('.navigation-overlay').show();
+		$('.sub-menu').slideUp(150);
 	});
 
 	$('body').on('click tap', '.books-tag .overlay-navigation-pics', function() {
+		
 		var bookNumber = this.id.charAt(this.id.length - 1);
 		$('.navigation-overlay').hide();
 		
-		$('body').animate({ scrollTop: ( $('article .book' + bookNumber).offset().top - ( $('header').height() + $('.sub-menu').height() + 50) ) });	
+		$('body').animate({ scrollTop: ( $('article .book' + bookNumber).offset().top - ( $('header').height() + $('.sub-menu').height() + 50) ) });
+		if (location.hash === "#/storybooks") {
+			$('.storybooks-menu').slideDown(200); 
+	    }
+	    if (location.hash === "#/textbooks") {
+			$('.textbooks-menu').slideDown(200);
+	    }	
 	});
 
 
@@ -243,18 +251,25 @@ $(document).ready(function() {
 	/* == profile-overlay navigation  == */
 	$('.characters-menu-link').click(function() {
 		$('.navigation-overlay').show();
+		$('.sub-menu').slideUp(150);
 		
 	});
 
 	$('body').on('click tap', '.about-us-tag .overlay-navigation-pics', function() {
+
 		var profileNumber = this.id.charAt(this.id.length - 1);
 
 		$('.navigation-overlay').hide();
 		
-		$('body').animate({ scrollTop: ( $('article .profile' + profileNumber).offset().top - 140 ) });	
+		$('body').animate({ scrollTop: ( $('article .profile' + profileNumber).offset().top - 140 ) });
+
+		if (location.hash === "#/about-us") {
+			$('.profile-menu').slideDown(200);
+	    }
 	});
 
 	$('body').on('click tap', '.navigation-overlay', function() {
+		
 		$('.navigation-overlay').hide();
 	});
 
