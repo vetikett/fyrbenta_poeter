@@ -1,6 +1,14 @@
 
 var myApp = angular.module('myApp', ['ngRoute']);
 
+myApp.controller('AnalyticsController', ['$scope', function ($scope) {
+
+  $scope.$on('$viewContentLoaded', function(event) {
+    var location = "/" + (window.location.hash);
+    window.ga('send', 'pageview', { page: location });
+  });
+}]);
+
 myApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.

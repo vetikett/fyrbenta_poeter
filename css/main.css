@@ -677,18 +677,20 @@ article {
         width: 320px;
     }
 
+    .buy-button {
+        margin: 10px 92px;
+    }
+
     .book-section, .profile-section {
         display: inline-block;
         vertical-align: top;
-        width: 280px;
+        width: 340px;
         margin: 0 auto;
     }
 
     .book-section p {
         text-align: center;
-    }
-
-  
+    }  
 
     .press-characters {
         margin: 0 0 -36px 0;
@@ -825,7 +827,6 @@ article {
     .book-section, .profile-section {
         display: inline-block;
         vertical-align: top;
-        width: 280px;
         margin: 0 30px;
     }
 

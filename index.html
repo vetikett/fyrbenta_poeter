@@ -10,8 +10,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+         
+
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Patrick+Hand|Delius' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
 
@@ -60,12 +79,12 @@
                 <ul>
                     <li><a class="book1-menu-link" href="">MASK I RADER</a></li>
                     <li><a class="book2-menu-link" href="">RÖDA HUNDAR</a></li>
-                    <li><a class="book3-menu-link" href="">PLUGGHÄSTAR</a></li>
+                    <li><a class="book3-menu-link" href="">CIRKUSAPOR</a></li>
                 </ul>
                 <ul>
-                    <li><a class="book4-menu-link" href="">CIRKUSAPOR</a></li>
-                    <li><a class="book5-menu-link" href="">LIPSILLAR</a></li>
-                    <li><a class="book6-menu-link" href="">SMÅRIM & ANNAT STIM</a></li>
+                    <li><a class="book4-menu-link" href="">SMÅRIM & ANNAT STIM</a></li>
+                    <li><a class="book5-menu-link" href="">PLUGGHÄSTAR</a></li>
+                    <li><a class="book6-menu-link" href="">LIPSILLAR</a></li>
                     <li><a class="all-books-menu-link" href=""><span>VISA ALLA</span></a></li>
                 </ul>
             </nav>
@@ -89,7 +108,7 @@
 
         <div class="main-container">
             
-            <div class="main wrapper clearfix">
+            <div class="main wrapper clearfix" ng-controller="AnalyticsController">
           
                 <div ng-view autoscroll="true"></div>
             </div> <!-- #main -->
@@ -113,15 +132,17 @@
                     </div>
                 </div>
                 
-                <!-- <nav class="footer-nav">
-                    <ul>
-                        <li><a class="books-nav-link any-page-link" href="#books">Böcker</a></li>
-                        <li><a class="info-nav-link any-page-link" href="#info">Info</a></li>
-                        <li><a class="about-us-nav-link any-page-link" href="#about-us">Om oss</a></li>
-                        <li><a class="press-nav-link any-page-link" href="#press">Press</a></li>
-                        <li><a class="eshop-nav-link any-page-link" href="#e-shop">E-shop</a></li>
-                    </ul>
-                </nav> -->
+                <!-- Google analytics -->
+                <script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-66151735-1', 'auto');
+                  ga('send', 'pageview');
+
+                </script>
 
             </footer>
         </div>
