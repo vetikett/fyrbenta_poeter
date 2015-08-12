@@ -416,7 +416,7 @@ article {
 }
 
 .navigation-overlay-content {
-    background-image: url('../img/tapet.jpg'); 
+    background-image: url('../img/tapet.jpg');
     position: relative;
     width: 80%;
     max-width: 1000px;
@@ -561,7 +561,8 @@ article {
         position: fixed;
         width: 100%;
         z-index: 2;
-   }
+    }
+
 
     nav {
         width: 103%;
@@ -573,6 +574,11 @@ article {
         margin: 0 1%;
         padding: 15px 1%;
         margin-bottom: 10px;
+    }
+
+    /* Remove this if e-shop menu tag is back. Then margins will be right again. */
+    .header-container li a {
+        margin: 0 4.2%;
     }
 
     nav li:first-child a {

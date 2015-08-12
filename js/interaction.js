@@ -231,7 +231,7 @@ $(document).ready(function() {
 		$('.sub-menu').slideUp(150);
 	});
 
-	$('body').on('click touchstart', '.books-tag .overlay-navigation-pics', function() {
+	$('body').on('click tap', '.books-tag .overlay-navigation-pics', function() {
 		
 		var bookNumber = this.id.charAt(this.id.length - 1);
 		$('.navigation-overlay').hide();
@@ -255,7 +255,7 @@ $(document).ready(function() {
 		
 	});
 
-	$('body').on('click touchstart', '.about-us-tag .overlay-navigation-pics', function() {
+	$('body').on('click tap', '.about-us-tag .overlay-navigation-pics', function() {
 
 		var profileNumber = this.id.charAt(this.id.length - 1);
 
@@ -268,7 +268,7 @@ $(document).ready(function() {
 	    }
 	});
 
-	$('body').on('click touchstart', '.navigation-overlay', function() {
+	$('body').on('click tap', '.navigation-overlay', function() {
 		
 		$('.navigation-overlay').hide();
 
